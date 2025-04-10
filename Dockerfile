@@ -6,4 +6,7 @@ COPY app.py app.py
 
 RUN pip install flask
 
-CMD [ "python3", "-m" , "flask" , "run" , "--host=0.0.0.0" ]
+EXPOSE 5000
+
+CMD ["flask" , "run" , "--host=0.0.0.0"]
+
